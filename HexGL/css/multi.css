@@ -26,7 +26,25 @@ html, body {
   text-align: center;
 }
 
+/* Moiré : deux trames de lignes fines, légèrement désaxées, aux couleurs de la marque. */
+#global::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background:
+    radial-gradient(ellipse at 20% 15%, var(--brand-violet) 0%, transparent 55%),
+    radial-gradient(ellipse at 85% 90%, var(--brand-blue) 0%, transparent 55%),
+    repeating-linear-gradient(45deg, var(--brand-cyan) 0 1px, transparent 1px 6px),
+    repeating-linear-gradient(48deg, var(--brand-violet) 0 1px, transparent 1px 6px);
+  opacity: 0.45;
+  pointer-events: none;
+}
+
 #global::before {
+  z-index: 1;
   content: "";
   position: absolute;
   top: 0;
