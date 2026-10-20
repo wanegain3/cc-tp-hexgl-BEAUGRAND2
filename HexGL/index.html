@@ -45,16 +45,22 @@
   <body>
     <div id="step-1">
       <div id="global"></div>
-      <div id="title">
-      </div>
-      <div id="menucontainer">
-        <div id="menu">
-          <div id="start">Start</div>
-          <div id="s-controlType">Controls: Keyboard</div>
-          <div id="s-quality">Quality: High</div>
-          <div id="s-hud">HUD: On</div>
-          <div id="s-godmode" style="display: none">Godmode: Off</div>
-          <div id="s-credits">Credits</div>
+      <div id="home">
+        <div id="brand">
+          <img id="brand-logo" alt="">
+          <div id="brand-name" style="display: none"></div>
+          <h1 id="brand-welcome"></h1>
+          <p id="brand-subtitle"></p>
+        </div>
+        <div id="menucontainer">
+          <div id="menu">
+            <div id="start">Start</div>
+            <div id="s-controlType">Controls: Keyboard</div>
+            <div id="s-quality">Quality: High</div>
+            <div id="s-hud">HUD: On</div>
+            <div id="s-godmode" style="display: none">Godmode: Off</div>
+            <div id="s-credits">Credits</div>
+          </div>
         </div>
       </div>
     </div>
@@ -123,6 +129,7 @@
 
     <script src="bkcore/hexgl/HexGL.js"></script>
 
+    <script src="brand.js"></script>
     <script src="launch.js"></script>
 
   </body>
